@@ -29,22 +29,21 @@ body{
     background-color: var(--dark-blue-color1);
 }
 .business_card{
-    max-width:800px;
-    background-color: aliceblue;
+    max-width:850px;
     display:grid;
     grid-template-columns:repeat(8,1fr);
     grid-template-rows: repeat(3,max-content);
     background-color: var(--dark-blur-color2);
-    box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.6);
     border-radius: 8px;
-    margin:auto 2em;
+    margin:2em;
 
 }
 
 img{
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     mix-blend-mode: multiply;
     min-height:100%;
     border-radius: 0 8px 8px 0;
@@ -68,6 +67,7 @@ img{
 
     font-size:2.35rem;
     font-weight: 700;
+    margin-bottom: 1.2rem;
   
 }
 h1 span{
@@ -96,33 +96,28 @@ h1 span{
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     text-transform: uppercase;
+    
 }
-.card__stats h2{
+
+li{
+    list-style-type: none;
+}
+.card__stats li p:first-child{
     color:var(--font-heading-color);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
-.card__stats h4{
+.card__stats li p:last-child{
     color:var(--stat-heading-color);
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 100;
-    margin-top: .25rem;
+    
     opacity: .75;
+    font-size: 1.125rem;
 }
-.company__stats{
-    grid-row: 1/2;
-    grid-column: 1/2;
-}
-.template__stats{
-    grid-row: 1/2;
-    grid-column: 2/3;
-}
-.query__stats{
- 
-    grid-column: 3/4;
-}
-.card__image{
+
+picture{
     grid-row:1 / -1;
     grid-column:5 / -1;
     object-fit: contain;
@@ -132,11 +127,13 @@ h1 span{
 footer{
     color:var(--font-heading-color);
     font-size: 1.5rem;
+    margin:1rem 2rem;
 }
 footer a{
     text-decoration: none;
     color:var(--font-heading-color);
     padding:.5rem;
+    
 }
 footer a:hover{
     background-color: var(--violet-light);
@@ -154,7 +151,7 @@ footer a:hover{
     margin:2rem auto;
     grid-template-rows: max-content 1fr;
    }
-   .card__image{
+   picture{
     grid-row: 1/2;
     grid-column: 1/ 2;
     border-radius:  8px 8px 0 0;
@@ -175,13 +172,13 @@ footer a:hover{
     grid-row:2/3;
    }
    .card__stats{
-    margin-top:1rem;
+    margin-top:1.23rem;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align:center;
    }
-   .card__content div{
-    margin:0.9rem auto;
-   }
+ 
+ 
 }
