@@ -61,11 +61,11 @@ img{
 
     grid-row: 1/  2;
    
-    max-width: 250px;
+    max-width: 300px;
     color:var(--font-heading-color);
     font-family: 'Inter', sans-serif;
 
-    font-size:2.35rem;
+    font-size:2.5rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
   
@@ -102,11 +102,15 @@ h1 span{
 li{
     list-style-type: none;
 }
+li{
+    padding:0.25rem;
+}
 .card__stats li p:first-child{
     color:var(--font-heading-color);
     font-size: 2rem;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
+
 }
 .card__stats li p:last-child{
     color:var(--stat-heading-color);
@@ -115,6 +119,7 @@ li{
     
     opacity: .75;
     font-size: 1.125rem;
+
 }
 
 picture{
@@ -140,7 +145,7 @@ footer a:hover{
     color: var(--dark-blur-color2);
 }
 
-@media (max-width:600px) {
+@media (max-width:650px) {
    body{
 
     text-align: center;
@@ -179,6 +184,15 @@ footer a:hover{
     align-items: center;
     text-align:center;
    }
- 
+   .card__stats li p:first-child{
+   
+    font-size: 1.85rem;
+    
+
+}
+.card__stats li p:last-child{
+    font-size: 1rem;
+
+}
  
 }
